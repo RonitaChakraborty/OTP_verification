@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>OTP Verification</h2>
+        <p>Please type verification code sent to 
+            <span id="mobile">(000) 000-0000</span>
+        </p>
+        <p>the OTP will expire in <span id ="expire">0</span>s</p>
+
+        <div class="row">
+            <input type="number">
+            <input type="number" disabled>
+            <input type="number" disabled>
+            <input type="number" disabled>
+        </div>
+        <button>Verify OTP</button>
+        <p>Didn't receive code?
+            <a href="#" id="request" onclick="generateOTP()">Request again!</a>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
